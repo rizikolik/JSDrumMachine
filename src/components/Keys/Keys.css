@@ -1,0 +1,10 @@
+.keys{
+    display:grid;
+    grid-template-columns:150px 150px 150px;
+    grid-template-rows:50px 50px 50px;
+}
+.drum-pad{
+    border:1px solid gray;
+    background:none;
+    color:white;
+}
