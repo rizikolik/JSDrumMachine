@@ -6,9 +6,17 @@ class Controller extends React.Component{
 
     render(){
         return(
-            <div>
-                <h1>COntroller</h1>
-                <div id="display"></div>
+            <div className="container">
+             
+                <div>
+                    NOW PLAYİNG:
+                    <div id="display">
+                    
+                    </div>
+
+                    
+                </div>
+                
             </div>
         )
     }

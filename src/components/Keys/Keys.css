@@ -1,10 +1,37 @@
 .keys{
     display:grid;
-    grid-template-columns:150px 150px 150px;
-    grid-template-rows:50px 50px 50px;
+    grid-template-columns:180px 200px 200px;
+    grid-template-rows:80px 80px 80px;
 }
 .drum-pad{
     border:1px solid gray;
     background:none;
-    color:white;
+    color:#E7D7C7;
+    font-size:2em;
+    font-weight: 800;
+}
+.active1{
+    background-color:#B33CE1;
+}
+@media screen and (min-width:751px){
+    .active2{
+        background-color:none;
+        transition:background-color 0.05s;
+    }
+    .active2:hover{
+        background-color: #B33CE1;
+    }
+}
+
+@media screen and  (max-width:750px){
+    .keys{
+        display:grid;
+        grid-template-columns:80px 80px 80px;
+        grid-template-rows:80px 80px 80px;
+    }
+    .active2:active{
+        background-color: #B33CE1;
+    }
+  
+
 }
