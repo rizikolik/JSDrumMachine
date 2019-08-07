@@ -9,9 +9,9 @@ import MenuAppBar from './components/menu';
 function App() {
   return (
     <div>
-<MenuAppBar />
+
     <div id="drum-machine" >
-      
+    
       <Keys />
       <Controller />
       
