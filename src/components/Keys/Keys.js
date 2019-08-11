@@ -5,7 +5,8 @@ class Keys extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            active:false
+            active:false,
+            play:""
         }
         this.handlePlay=this.handlePlay.bind(this);
         this.keydownColorize=this.keydownColorize.bind(this);
@@ -34,14 +35,20 @@ handlePlay(e){
         let source=document.getElementById(e.key.toUpperCase());
     
         if(source){
+            this.setState({
+                play:source.src
+            })
            document.getElementById("display").innerHTML=e.key.toUpperCase();
            source.parentElement.classList.add("active1");
-           audio= new Audio(source.src);
+           audio= new Audio(this.state.play);
            audio.play();
         }
     }else {
         document.getElementById("display").innerHTML=e.target.firstChild.id;
-        audio=new Audio(e.target.firstChild.src);
+this.setState({
+    play:e.target.firstChild.src
+})   
+        audio=new Audio(this.state.play);
         audio.play();
         let active=document.querySelectorAll(".active2");
         
