@@ -6,6 +6,8 @@
     position:fixed;
     top:0;
     background:#7D38E6;
+    text-align:center !important;
+    justify-content:flex-start;
 }
 a{
     color:#FFFFFF !important;
