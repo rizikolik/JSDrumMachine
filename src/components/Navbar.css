@@ -1,0 +1,14 @@
+.navbar{
+    display:flex;
+    flex-direction: row !important;
+    width:100%;
+    float:left;
+    position:fixed;
+    top:0;
+    background:#7D38E6;
+}
+a{
+    color:#FFFFFF !important;
+    font-size:1.1em;
+    font-weight: 500;
+}

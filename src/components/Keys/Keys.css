@@ -2,9 +2,10 @@
     display:grid;
     grid-template-columns:180px 200px 200px;
     grid-template-rows:80px 80px 80px;
+
 }
 .drum-pad{
-    border:1px solid gray;
+    border:1.5px solid #8545C6;
     background:none;
     color:#E7D7C7;
     font-size:2em;

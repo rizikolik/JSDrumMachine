@@ -35,20 +35,17 @@ handlePlay(e){
         let source=document.getElementById(e.key.toUpperCase());
     
         if(source){
-            this.setState({
-                play:source.src
-            })
+            source.play()
            document.getElementById("display").innerHTML=e.key.toUpperCase();
            source.parentElement.classList.add("active1");
-           audio= new Audio(this.state.play);
-           audio.play();
+           
+      
+          
+
         }
     }else {
         document.getElementById("display").innerHTML=e.target.firstChild.id;
-this.setState({
-    play:e.target.firstChild.src
-})   
-        audio=new Audio(this.state.play);
+        let audio=e.target.firstChild
         audio.play();
         let active=document.querySelectorAll(".active2");
         
