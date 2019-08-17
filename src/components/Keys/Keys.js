@@ -23,19 +23,19 @@ keydownColorize(e){
   let source=document.getElementById(e.key.toUpperCase());
     if(source){
         source.parentElement.classList.remove("active1")
+        document.getElementById("display").innerHTML="JS";
     }
     }
    
 
 
 handlePlay(e){
-    console.log(e.key)
-    let audio;
+  
     if(e.key){
         let source=document.getElementById(e.key.toUpperCase());
     
         if(source){
-            source.play()
+            source.play();
            document.getElementById("display").innerHTML=e.key.toUpperCase();
            source.parentElement.classList.add("active1");
            
@@ -45,16 +45,17 @@ handlePlay(e){
         }
     }else {
         document.getElementById("display").innerHTML=e.target.firstChild.id;
-        let audio=e.target.firstChild
+        let audio=e.target.firstChild;
         audio.play();
         let active=document.querySelectorAll(".active2");
         
         for(let i=0;i<active.length;i++){
-            
             active[i].classList.remove("active2");
+            
+           
         }
+      
         e.target.classList.add("active2")
-        console.log(e.target)
         
     }
      

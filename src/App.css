@@ -1,26 +1,16 @@
-.main-cont{
-    display:flex;
 
-    justify-content: center;
-}
 #drum-machine{
     margin-right:auto;
     margin-left:auto;
     display:flex;
     flex-direction:row;
     text-align: center;
-    justify-content:end;
-    width:50%;
-    align-self:flex-start;
+    max-width:100%;
+    
   
     
 }
-.makeStyles-root-1{
-    width:100%;
-    position:fixed;
-   color:rgb(5, 1, 6) !important;
-    top:0;
-}
+
 
 .circle.small {
 	border: 16px solid white;

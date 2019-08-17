@@ -13,7 +13,7 @@ function App() {
   <Navigation />
     <div className="circle small">
      <div id="display">
-JS
+       JS
      </div>
     </div>
  
