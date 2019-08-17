@@ -5,4 +5,4 @@
 1. React
 2. Vanilla JS
 3. React Bootstrap
-### You can see the live version [here]("https://rizikolik.github.io/JSDrumMachine/")
+### You can see the live version [here](https://rizikolik.github.io/JSDrumMachine/).
