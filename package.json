@@ -10,7 +10,7 @@
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
-  "home": "https://rizikolik.github.io/JSDrumMachine/",
+  "home": "https://rizikolik.github.io/JSDrumMachine",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
